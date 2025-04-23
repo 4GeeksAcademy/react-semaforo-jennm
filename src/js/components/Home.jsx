@@ -1,28 +1,22 @@
 import React from "react";
 
-//include images into your bundle
-import rigoImage from "../../img/rigo-baby.jpg";
+//aqui voy a importar el componente TrafficLight
+import TrafficLight from "./TrafficLight";
 
-//create your first component
+
+//aqui creo mi nuevo codigo
 const Home = () => {
 	return (
-		<div className="text-center">
-            
+		<div className="text-center mt-5">
+            <h1 className="text-center mt-5">My Traffic Light</h1> {/* mi titulo */}
+			
+		    <TrafficLight/> {/* esta es mi etiqueta personalizada */}
 
-			<h1 className="text-center mt-5">Hello Rigo!</h1>
-			<p>
-				<img src={rigoImage} />
-			</p>
-			<a href="#" className="btn btn-success">
-				If you see this green button... bootstrap is working...
-			</a>
-			<p>
-				Made by{" "}
-				<a href="http://www.4geeksacademy.com">4Geeks Academy</a>, with
-				love!
+			<p className="mt-4">
+				Made by Jenn with love❤️!
 			</p>
 		</div>
 	);
 };
 
-export default Home;
+export default Home; //esto si lo mantenemos igual 
